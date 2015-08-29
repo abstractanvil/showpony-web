@@ -1,5 +1,89 @@
-h1
-  font-size 116px
+@require 'theme'
 
-h2
-  font-size 32px
+::selection
+  background accent4
+
+::-moz-selection
+  background accent4
+
+html
+  box-sizing border-box
+
+*, *:before, *:after
+  box-sizing inherit
+
+
+body
+  background background
+  font-family 'Special Elite', monospace
+  font-size 21px
+  color accent1
+
+header
+  overflow auto
+  padding-bottom 16px
+
+  a
+    color grayAccent
+
+  .download
+    padding 16px
+    text-align center
+    background accent4
+    -webkit-box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
+    -moz-box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
+    box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
+
+    a
+      color darkText
+
+footer
+  width rightSide
+  position fixed
+  bottom 0
+  right 0
+
+  #cover-container
+    position relative
+    bottom 0
+    right 0
+
+  img
+    vertical-align bottom
+
+  #cover-actual
+    position absolute
+    bottom 0
+    right 0
+
+    opacity 0
+    transitionopacity 1s ease-in-out
+
+  #cover-actual:hover, #cover-actual:active
+    opacity 1
+
+img
+  max-width 100%
+
+h1
+  float left
+  width 50%
+  padding gutter
+
+a
+  text-decoration none
+  color blueAccent
+
+  &.active
+    color accent
+
+  &:hover
+    color accent4
+
+section
+  float left
+  width leftSide
+
+p
+  margin 0 gutter 32px gutter
+  line-height 1.5em
