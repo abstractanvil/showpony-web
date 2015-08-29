@@ -22,6 +22,17 @@ module.exports = (grunt) ->
         files:
           './dist/styles/style.css': ['./src/app/styles/*.styl']
 
+    imagemin:
+      all:
+        files: [
+          {
+            expand: true,
+            cwd: './src/assets/images/',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: './dist/assets/images/'
+          }
+        ]
+
     watch:
       jade:
         files: ['./src/app/**/*.jade']
@@ -30,6 +41,10 @@ module.exports = (grunt) ->
       styl:
         files: ['./src/app/styles/*.styl']
         tasks: ['stylus']
+
+      images:
+        files: ['./src/app/assets/images/*.{png,jpg,gif}']
+        tasks: ['imagemin']
 
     connect:
       server:
@@ -43,7 +58,8 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-stylus'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-connect'
+  grunt.loadNpmTasks 'grunt-contrib-imagemin'
 
-  grunt.registerTask 'dist', ['clean', 'bower', 'stylus', 'jade']
-  grunt.registerTask 'serve', ['connect:server', 'watch']
+  grunt.registerTask 'dist', ['clean', 'bower', 'stylus', 'jade', 'imagemin']
+  grunt.registerTask 'serve', ['dist', 'connect:server', 'watch']
   grunt.registerTask 'default', ['dist']
