@@ -12,8 +12,7 @@ module.exports = (grunt) ->
       compile:
         options:
           pretty: true
-          #data:
-          #  debug: false
+
         files:
           "./dist/index.html": ["./src/app/index.jade"]
 
