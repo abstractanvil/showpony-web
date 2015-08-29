@@ -1,0 +1,28 @@
+{
+  "name": "ShowPony",
+  "version": "0.1.0",
+
+  "dependencies": {
+    "font-awesome": "~4.4.0",
+    "reset-css": "~2.0.2011012602"
+  },
+
+  "devDependencies": { },
+
+  "exportsOverride": {
+    "font-awesome": {
+      "lib": [
+        "css/font-awesome.css",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.svg"
+      ]
+    },
+    "reset-css": {
+      "lib": [
+        "reset.css"
+      ]
+    }
+  }
+}

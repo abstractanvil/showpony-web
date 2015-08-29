@@ -1,0 +1,12 @@
+{
+  "name": "showpony",
+  "version": "1.0.0",
+  "description": "Official website.",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-stylus": "^0.22.0"
+  }
+}
