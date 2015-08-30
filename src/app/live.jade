@@ -1,12 +1,67 @@
 doctype html
 html
-  - var title = 'Tour'
+  - var title = 'Live'
   include ./includes/head.jade
   
   body
     include ./includes/header.jade
-    
-    section#live
-        | <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/ShowPony" class="bit-widget-initializer" data-artist="ShowPony" data-share-links="false" data-bandsintown-footer-link="false" data-notify-me="false">Bandsintown</a>
+        
+    section.live
+      h1 Up Next...
+      article
+        h1 Thursday, September 10, 2015
+        h2 at the Rock &amp; Roll Hotel in Washington DC
+        h2 with Albino Rhino, Freeform Radio, Cartoon Weapons
+        a(href="https://www.facebook.com/events/898796846870306/") more info...
+      
+    section.live
+      h1 In the Future...
+      article
+        h1 Tuesday, September 22, 2015
+        h2 at The Velvet Lounge in Washington DC
+        h2 with Indigenous Robot
+        
+      article
+        h1 Saturday, October 17, 2015
+        h2 at The Velvet Lounge in Washington DC
+        h2 with Electric Grandmother, Catscan!, Aggressive Pedestrian
+        a(href="https://www.facebook.com/events/1469934479974543/") more info...
+        
+      article
+        h1 Friday, October 23, 2015
+        h2 at The Velvet Lounge in Washington DC
+        h2 with Proxy States, 3rd Grade Friends
+      
+      article
+        h1 Saturday, October 24, 2015
+        h2 at Metropolitan Kitchen in Anapolis MD
+        h2 with 3rd Grade Friends
+        
+      
+    section.live
+      h1 In the Past...
+      article
+        h1 Thursday, August 13, 2015
+        h2 at Wonderland Ballroom in Washington DC
+        h2 with Phantomweight, Dais
+        a(href="https://www.facebook.com/events/987761361263599/") more info...
+        
+      article
+        h1 Sunday, August 2, 2015
+        h2 at AlleyCatHouse in Washington DC
+        h2 with Breakup Season, Default Handshake
+        a(href="https://www.facebook.com/events/987761361263599/") more info...
+        
+      article
+        h1 Sunday, July 19, 2015
+        h2 at Hippo House in Baltimore Md
+        h2 with Adjective Animal, Daikon Daikon
+        a(href="https://www.facebook.com/events/489467364563830/") more info...
+        
+      article
+        h1 Saturday, July 18, 2015
+        h2 at The Velvet Lounge in Washington DC
+        h2 with American Television, Widows Watch, Brick Top
+        a(href="https://www.facebook.com/events/1616100908633227/") more info...
       
     include ./includes/footer.jade
