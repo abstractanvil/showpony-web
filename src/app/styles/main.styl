@@ -19,33 +19,8 @@ body
   font-size 21px
   color accent1
 
-header
-  overflow auto
-  padding-bottom 16px
-
-  a
-    color grayAccent
-
-  .download
-    padding 16px
-    text-align center
-    background accent4
-    -webkit-box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
-    -moz-box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
-    box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
-
-    a
-      color darkText
-
-  h1
-    float left
-    width 50%
-    padding gutter
-
 img
   max-width 100%
-
-
 
 a
   text-decoration none
@@ -60,6 +35,9 @@ a
 section
   float left
   width leftSide
+
+  @media screen and (max-width: breakpointMed)
+    width 100%
 
 p
   margin 0 gutter 32px gutter
