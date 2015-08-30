@@ -17,6 +17,7 @@ module.exports = (grunt) ->
           "./dist/index.html": ["./src/app/index.jade"]
           "./dist/music.html": ["./src/app/music.jade"]
           "./dist/photos.html": ["./src/app/photos.jade"]
+          "./dist/live.html": ["./src/app/live.jade"]
 
     stylus:
       compile:
