@@ -1,35 +1,18 @@
-doctype html
-html
+header
+  div.download
+    a(href="https://showponiesindc.bandcamp.com/yum") Got a download code? Click here!
 
-  head
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width, minimum-scale=1.0, maximum-scale=1.0")
+  h1
+    a(href="index.html") 
+      img(src="assets/images/logo.png", alt="ShowPony logo")
 
-    title ShowPony - #{title}
-
-    link(href='http://fonts.googleapis.com/css?family=Special+Elite', rel='stylesheet', type='text/css')
-    link(href="lib/reset-css/reset.css", rel="stylesheet", type="text/css")
-    link(href="lib/font-awesome/font-awesome.css", rel="stylesheet", type="text/css")
-    link(href="styles/style.css", rel="stylesheet", type="text/css")
-    
-  body
-
-    header
-
-      div.download
-        a(href="https://showponiesindc.bandcamp.com/yum") Got a download code? Click here!
-
-      h1
-        a(href="index.html") 
-          img(src="assets/images/logo.png", alt="ShowPony logo")
-
-      nav
-        a(href="index.html" class=title === "Bio" ? "active" : undefined) Bio
-        a(href="music.html" class=title === "Music" ? "active" : undefined) Music
-        a(href="photos.html" class=title === "Photos" ? "active" : undefined) Photos
-        br
-        a(href="live.html" class=title === "Tour" ? "active" : undefined) Tour
-        a(href="contact.html" class=title === "Contact" ? "active" : undefined) Contact
-        br
-        a(href="https://www.facebook.com/pages/ShowPony/185266874857501", class="social-link", id="facebook-link"): i.fa.fa-facebook-square
-        a(href="https://twitter.com/showponyband", class="social-link", id="twitter-link"): i.fa.fa-twitter-square
+  nav
+    a(href="index.html" class=title === "Bio" ? "active" : undefined) Bio
+    a(href="music.html" class=title === "Music" ? "active" : undefined) Music
+    a(href="photos.html" class=title === "Photos" ? "active" : undefined) Photos
+    br
+    a(href="live.html" class=title === "Tour" ? "active" : undefined) Tour
+    a(href="contact.html" class=title === "Contact" ? "active" : undefined) Contact
+    br
+    a(href="https://www.facebook.com/pages/ShowPony/185266874857501", class="social-link", id="facebook-link"): i.fa.fa-facebook-square
+    a(href="https://twitter.com/showponyband", class="social-link", id="twitter-link"): i.fa.fa-twitter-square

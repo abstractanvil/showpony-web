@@ -1,7 +1,12 @@
-- var title = 'Tour'
-include ./includes/header.jade
-
-section#live
-    | <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/ShowPony" class="bit-widget-initializer" data-artist="ShowPony" data-share-links="false" data-bandsintown-footer-link="false" data-notify-me="false">Bandsintown</a>
+doctype html
+html
+  - var title = 'Tour'
+  include ./includes/head.jade
   
-include ./includes/footer.jade
+  body
+    include ./includes/header.jade
+    
+    section#live
+        | <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/ShowPony" class="bit-widget-initializer" data-artist="ShowPony" data-share-links="false" data-bandsintown-footer-link="false" data-notify-me="false">Bandsintown</a>
+      
+    include ./includes/footer.jade
