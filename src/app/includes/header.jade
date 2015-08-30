@@ -24,12 +24,12 @@ html
           img(src="assets/images/logo.png", alt="ShowPony logo")
 
       nav
-        a(href="index.html" class="active") Bio
-        a(href="music.html") Music
-        a(href="photos.html") Photos
+        a(href="index.html" class=title === "Bio" ? "active" : "") Bio
+        a(href="music.html" class=title === "Music" ? "active" : "") Music
+        a(href="photos.html" class=title === "Photos" ? "active" : "") Photos
         br
-        a(href="live.html") Tour
-        a(href="contact.html") Contact
+        a(href="live.html" class=title === "Tour" ? "active" : "") Tour
+        a(href="contact.html" class=title === "Contact" ? "active" : "") Contact
         br
         a(href="https://www.facebook.com/pages/ShowPony/185266874857501", class="social-link", id="facebook-link"): i.fa.fa-facebook-square
         a(href="https://twitter.com/showponyband", class="social-link", id="twitter-link"): i.fa.fa-twitter-square
