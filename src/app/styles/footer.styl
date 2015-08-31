@@ -1,29 +1,6 @@
 @require 'theme'
 
 footer
-  padding gutter
+  padding gutter-big
   text-align center
-
-  #cover-container
-    position relative
-    bottom 0
-    right 0
-
-  img
-    vertical-align bottom
-
-  #cover-actual
-    position absolute
-    bottom 0
-    right 0
-
-    opacity 0
-    transition opacity 1s ease-in-out
-
-  #cover-actual:hover, #cover-actual:active
-    opacity 1
-
-  @media screen and (max-width: breakpointMed)
-    position static
-    clear both
-    width 100%
+  background background
