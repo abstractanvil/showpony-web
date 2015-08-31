@@ -4,26 +4,21 @@ html
   include ./includes/head.jade
   
   body
-    
+
     section#landing
-      img(src="assets/images/logo.png" id="logo")
-      
-      nav
-        a(href="music.html" class=title === "Music" ? "active" : undefined) Music
-        | &sdot;
-        a(href="live.html" class=title === "Live" ? "active" : undefined) Live
-        | &sdot;
-        a(href="photos.html" class=title === "Photos" ? "active" : undefined) Photos
-        | &sdot;
-        a(href="photos.html" class=title === "Videos" ? "active" : undefined) Videos
-        | &sdot;
-        a(href="index.html" class=title === "Bio" ? "active" : undefined) Bio
-        br
-        a(href="https://www.facebook.com/pages/ShowPony/185266874857501", class="social-link", id="facebook-link"): i.fa.fa-facebook-square
-        a(href="https://twitter.com/showponyband", class="social-link", id="twitter-link"): i.fa.fa-twitter-square
-      
-      img(src="assets/images/sketch.png" id="sketch")
-          
+      div.landing-inner
+        img(src="assets/images/logo.png" id="logo")
+        
+        nav
+          a(href="music.html" class=title === "Music" ? "active" : undefined) Music
+          a(href="live.html" class=title === "Live" ? "active" : undefined) Live
+          a(href="photos.html" class=title === "Photos" ? "active" : undefined) Photos
+          a(href="photos.html" class=title === "Videos" ? "active" : undefined) Videos
+          a(href="index.html" class=title === "Bio" ? "active" : undefined) Bio
+          br
+          a(href="https://www.facebook.com/pages/ShowPony/185266874857501", class="social-link", id="facebook-link"): i.fa.fa-facebook-square
+          a(href="https://twitter.com/showponyband", class="social-link", id="twitter-link"): i.fa.fa-twitter-square
+                
     section#news
       article
         h1 Next Show
@@ -42,6 +37,7 @@ html
         
       article
         h1 Featured Video
+        img(src="assets/images/underconstruction.gif")
         
     include ./includes/footer.jade
       
