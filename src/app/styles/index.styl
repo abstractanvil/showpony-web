@@ -5,7 +5,7 @@ html, body
 
 #landing
   min-height 100%
-  width 100%
+  max-width 100%
   padding 0
 
   background background
@@ -29,13 +29,16 @@ html, body
 
 #news
   clearfix()
-  width 100%
+  max-width 100%
   padding gutter
 
   article
     width 33.3333%
     float left
     padding gutter
+
+    @media screen and (max-width: 768px)
+      width 100%
 
     h1
       text-transform uppercase
