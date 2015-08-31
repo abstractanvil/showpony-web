@@ -1,28 +1,10 @@
 @require 'theme'
 
 header
-  overflow auto
-  padding-bottom 16px
+  padding gutter
+  background background
+  clearfix()
 
-  a
-    color grayAccent
-
-  .download
-    padding 16px
-    text-align center
-    background accent4
-    -webkit-box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
-    -moz-box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
-    box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
-
-    a
-      color darkText
-
-  h1
+  img
     float left
-    width 50%
-    padding gutter
-
-  @media screen and (max-width: breakpointMed)
-    header, h1
-      width 100%
+    width 250px

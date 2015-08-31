@@ -1,0 +1,48 @@
+@require 'theme'
+
+html, body
+  height 100%
+
+#landing
+  height 100%
+  position relative
+  text-align center
+
+  #sketch
+    position absolute
+    right 0
+    bottom 0
+    height 60%
+
+  #logo
+    position relative
+    z-index 100
+    max-width 100%
+    height 40%
+
+#news
+  clearfix()
+  background #fff
+  padding gutter
+
+  article
+    width 33.3333%
+    float left
+
+    h1
+      text-transform uppercase
+      font-weight bold
+
+    li
+      float left
+      width 33%
+      height 150px
+      padding-right gutter
+      background-size cover
+      background-position center
+
+    h1,h2,h3
+      padding 4px 0
+
+footer
+  background background
