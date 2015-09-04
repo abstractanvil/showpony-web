@@ -1,0 +1,60 @@
+@require 'theme'
+
+html, body
+  height 100%
+
+#landing
+  min-height 100%
+  max-width 100%
+  padding 0
+
+  background background
+  background-image url(../assets/images/sketch.png)
+  background-size 50%
+  background-position bottom right
+  background-repeat no-repeat
+
+  .landing-inner
+    max-width 960px
+    margin 0 auto
+    padding gutter-big
+
+  #logo
+    max-width 100%
+
+  nav
+    font-size 48px
+    margin-top gutter-big
+    width 60%
+
+#news
+  clearfix()
+  max-width 100%
+  padding gutter
+
+  article
+    width 33.3333%
+    float left
+    padding gutter
+
+    @media screen and (max-width: 768px)
+      width 100%
+
+    h1
+      text-transform uppercase
+      color accent3
+      font-size 36px
+
+    h2
+      font-weight bold
+
+    li
+      float left
+      width 33.3333%
+      height 150px
+      padding-right gutter
+      background-size cover
+      background-position center
+
+    h1,h2,h3
+      padding 4px 0

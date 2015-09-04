@@ -1,0 +1,46 @@
+doctype html
+html
+  - var title = 'Bio'
+  include ./includes/head.jade
+  
+  body
+    include ./includes/header.jade
+    
+    section#bio
+    
+      figure
+        img(src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11825679_650307151771696_6256639032693601345_n.jpg?oh=422034c2849005beb8469689e4c3d48e&oe=566BEC9D")
+        figcaption 
+          a(href="https://www.facebook.com/Roxplosion") photo by Roxplosion
+
+      p
+        | ShowPony is an instrumental math rock band hailing from Washington, DC.
+        | Their debut LP, 
+        a(href="music.html") Slow Danger
+        | , highlights their complicated-rock tendencies
+        | with elaborate song composition and intricate syncopation.
+        | In the summer of 2015, the band hit the road with stops in Canada and the midwest,
+        | playing songs from their first album and road-testing new songs for
+        | an upcoming full-length album.
+
+      p
+        | Brian Moran drives the songs along, drumming the thin line between hard-hitting power
+        | and subtle nuance, while Eric Sakmar adds his prog-rock prowess to the mix
+        | with enough bass force to shake the glasses off of your face. On guitar,
+        |   Dan Spagaire pulls from his Pittsburgh upbringing and fondness for loop
+        | pedals as his fingers fly, providing angular melodies and classic-grit riffs.
+
+      p
+        | Blending math, classic, pop, post, and prog rock together, ShowPony offers an
+        | exciting live show full of contagious energy feeding off the enjoyment
+        | these three members get from playing music. Local concert reviewer
+        | <a href="http://dcrocklive.blogspot.com/2013/04/tarrtufi-showpony-appomattox-ghion-apr.html"> David
+        | Hintz</a> describes a ShowPony show - "&#8230;the guitarist created intriguing
+        | patterns over countering bass runs atop crisp snare and cymbal attacks.
+        | The music is mobile with some jagged cuts as an ice skater may fly by
+        | leaving a crystal trail."
+
+      p
+        | ShowPony is currently finalizing material for their full-length follow up to <a href="music.html">Slow Danger</a>.
+        
+    include ./includes/footer.jade
