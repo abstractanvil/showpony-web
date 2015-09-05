@@ -1,10 +1,10 @@
 @require 'theme'
 
 ::selection
-  background accent4
+  background accent-light
 
 ::-moz-selection
-  background accent4
+  background accent-light
 
 html
   box-sizing border-box
@@ -16,27 +16,27 @@ body
   background #fff
   font-family 'Special Elite', monospace
   font-size 21px
-  color accent1
+  color text-color
 
 img
   max-width 100%
 
 a
   text-decoration none
-  color blueAccent
+  color link-color
 
   &.active
     color accent
 
   &:hover
-    color accent4
+    color accent-light
 
 section
   padding gutter-big 0
-  max-width 600px
+  max-width content-width
   margin 0 auto
 
-  @media screen and (max-width: 600px)
+  @media screen and (max-width: content-width)
     padding gutter-big
 
 article
