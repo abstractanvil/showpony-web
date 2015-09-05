@@ -14,10 +14,16 @@ html, body
   background-position bottom right
   background-repeat no-repeat
 
+  @media screen and (max-width: breakpoint-small)
+    background-size 75%
+
   .landing-inner
     max-width 960px
     margin 0 auto
     padding gutter-big
+
+    @media screen and (max-width: breakpoint-small)
+      padding gutter
 
   #logo
     max-width 100%
@@ -26,6 +32,10 @@ html, body
     font-size font-size-huge
     margin-top gutter-big
     width 60%
+
+    @media screen and (max-width: breakpoint-small)
+      margin-top gutter
+      font-size font-size-big
 
 #news
   clearfix()
