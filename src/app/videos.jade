@@ -6,7 +6,13 @@ html
   body
     include ./includes/header.jade
     
-    section#videos
-      img(src="assets/images/underconstruction.gif")
+    div.content
+      section#videos
+        
+        article.video
+          h1 October 24, 2015
+          h2 at Metropolitan Kitchen in Annapolis, MD
+          div.embed-container
+            iframe(src='https://www.youtube.com/embed/2bfvRG9sRp0' frameborder='0' allowfullscreen)
         
     include ./includes/footer.jade

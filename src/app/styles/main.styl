@@ -13,7 +13,7 @@ html
   box-sizing inherit
 
 body
-  background content-background
+  background background-tint
   font-family 'Special Elite', monospace
   font-size font-size-base
   color text-color
@@ -30,6 +30,10 @@ a
 
   &:hover
     color accent-light
+
+.content
+  width 100%
+  background content-background
 
 section
   padding gutter-big 0
@@ -54,3 +58,17 @@ figure
 
 figcaption
   text-align center
+
+.embed-container
+  position relative
+  padding-bottom 56.25%
+  height 0
+  overflow hidden
+  max-width 100%
+
+  iframe, object, embed
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
