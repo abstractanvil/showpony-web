@@ -4,18 +4,16 @@ html, body
   height 100%
 
 #landing
-  min-height 100%
+  clearfix()
+  height 900px
   max-width 100%
   padding 0
+  position relative
 
   background background-tint
-  background-image url(../assets/images/sketch.png)
-  background-size 50%
-  background-position bottom right
-  background-repeat no-repeat
 
-  @media screen and (max-width: breakpoint-small)
-    background-size 75%
+  @media screen and (max-width: breakpoint-med)
+    height auto
 
   .landing-inner
     max-width 960px
@@ -32,10 +30,31 @@ html, body
     font-size font-size-huge
     margin-top gutter-big
     width 60%
+    z-index 2
+    position relative
 
     @media screen and (max-width: breakpoint-small)
       margin-top gutter
       font-size font-size-big
+
+  #sketch
+    width 50%
+    max-width 800px
+    position absolute
+    z-index 1
+    right 0
+    bottom 0
+
+    @media screen and (max-width: breakpoint-med)
+      position static
+      float right
+      max-width 75%
+      width 75%
+
+    @media screen and (max-width: breakpoint-small)
+      position static
+      max-width 100%
+      width 100%
 
 #news
   clearfix()
