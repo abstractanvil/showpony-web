@@ -8,6 +8,7 @@ html, body
   height 900px
   max-width 100%
   padding 0
+  padding-bottom 72px
   position relative
 
   background background-tint
@@ -37,24 +38,18 @@ html, body
       margin-top gutter
       font-size font-size-big
 
+    a
+      color link-color-light
+
+      &.active, &:hover
+        color darken(link-color-light, 25%)
+
   #sketch
-    width 50%
-    max-width 800px
+    width 100%
     position absolute
     z-index 1
     right 0
     bottom 0
-
-    @media screen and (max-width: breakpoint-med)
-      position static
-      float right
-      max-width 75%
-      width 75%
-
-    @media screen and (max-width: breakpoint-small)
-      position static
-      max-width 100%
-      width 100%
 
 #news
   clearfix()
@@ -75,7 +70,7 @@ html, body
 
     h1
       text-transform uppercase
-      color accent-dark
+      color background-tint
       font-size font-size-big
 
     h2

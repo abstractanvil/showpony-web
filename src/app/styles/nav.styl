@@ -7,21 +7,23 @@ nav
   a
     padding 0 8px
     display inline-block
+    font-family 'Special Elite', monospace
+    text-decoration none
 
   .social-link
-    text-align center
-
-  #facebook-link
-    color facebook-color
-
-  #twitter-link
-    color twitter-color
+    img
+      border 2px solid link-color-light
+      background link-color-light
+      border-radius 6px
 
   &.horiz
     float right
+    margin-top 8px
 
     .social-link
-      font-size font-size-base
+      img
+        vertical-align top
+        width 17px
 
     @media screen and (max-width: breakpoint-med)
       padding-top gutter
