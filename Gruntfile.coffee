@@ -20,6 +20,7 @@ module.exports = (grunt) ->
           "./dist/live.html": ["./src/app/live.jade"]
           "./dist/videos.html": ["./src/app/videos.jade"]
           "./dist/bio.html": ["./src/app/bio.jade"]
+          "./dist/arrow-smith-press-release.html": ["./src/app/arrowsmith.jade"]
 
     stylus:
       compile:

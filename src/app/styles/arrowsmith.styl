@@ -1,0 +1,44 @@
+@require 'theme'
+
+#arrowsmith-press
+  h1
+    font-size font-size-big
+
+  h2
+    font-weight bold
+
+  .details
+    margin-top 0 - gutter-big
+
+  #media
+    clearfix()
+
+    p
+      margin 0
+
+  audio
+    margin-bottom gutter-big
+    width 100%
+
+  .album-side
+    width 50%
+    float left
+
+    @media screen and (max-width: content-width)
+      width 100%
+      clear both
+
+  .a
+    padding-right gutter
+    @media screen and (max-width: content-width)
+      padding 0
+
+  .b
+    padding-left gutter
+    @media screen and (max-width: content-width)
+      padding 0
+
+  .art
+    h2
+      margin-top gutter
+
