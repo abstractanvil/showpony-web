@@ -1,0 +1,119 @@
+doctype html
+html
+  - var title = 'Press Release - Arrow Smith'
+  include ./includes/head.jade
+  
+  body
+    include ./includes/header.jade
+    
+    div.content
+      section#arrowsmith-press
+        div
+          h1 Arrow Smith
+
+          p 
+            | ShowPony is proud to announce the release of their second full-length album, <em>Arrow Smith</em>.
+            | The album will be available on CD or as a digital download on Friday, May 27.
+            | A limited run of vinyls will also be available in the coming months. 
+
+          p.details
+            a(href="https://showponiesindc.bandcamp.com/album/arrow-smith") https://showponiesindc.bandcamp.com/album/arrow-smith 
+
+          p
+            | ShowPony will be celebrating this occasion with an album release show on Saturday, May 28th at DC9 in 
+            | their home base of Washington DC.
+            | They'll be joined by Dumb Waiter (Richmond), Kabob-o-Taj (Baltimore/DC), and California Accent (DC).
+
+          p.details
+            a(href="https://www.facebook.com/events/221772561529502/") Event Info...
+
+          p
+            | <em>Arrow Smith</em> includes 8 new tracks and continues the all-instrumental,
+            | power-trio format from the band's first album, <em>Slow Danger</em>.
+            | However, <em>Arrow Smith</em> sets itself apart from earlier endeavors as the band explores themes of a more tempestuous nature.
+
+          p
+            | <em>Arrow Smith</em> also features two new paintings from artist J.C. Baez.
+            | Baez has worked with Peter Gabriel, Jon Anderson, and Walter Koenig.
+
+          p.details
+            a(href="http://jcbaezillustration.daportfolio.com/") http://jcbaezillustration.daportfolio.com/
+
+          p For more information about ShowPony, visit: 
+          p.details
+            a(href="http://showponyband.com/bio.html") http://showponyband.com/bio.html
+
+        div
+          h1 Links
+          p
+            a(href="http://showponyband.com/") http://showponyband.com/
+            br
+            a(href="https://www.facebook.com/pages/ShowPony/185266874857501") https://www.facebook.com/pages/ShowPony/185266874857501
+            br
+            a(href="https://twitter.com/showponyband") https://twitter.com/showponyband
+
+        div#media
+          h1 Media
+
+          // if you're reading this, you're probably trying to download these.
+          // we're not stopping you, so please be cool!
+          div.album-side.a
+            h2 Side A
+            div 
+              p 1. Sometimes Dogs Perceive Other Dogs Differently When They're Wearing Hats
+              audio(src="assets/mp3/sp01.mp3" controls=true)
+
+            div
+              p 2. Sensory Insensitivity
+              audio(src="assets/mp3/sp02.mp3" controls=true)
+
+            div
+              p 3. Masters N' Lasers
+              audio(src="assets/mp3/sp03.mp3" controls=true)
+
+            div
+              p 4. Quiet Storm
+              audio(src="assets/mp3/sp04.mp3" controls=true)
+
+          div.album-side.b
+            h2 Side B
+
+            div
+              p 5. Driving Through Florida, Part I: Boat
+              audio(src="assets/mp3/sp05.mp3" controls=true)
+
+            div
+              p 6. Driving Through Florida, Part II: Car
+              audio(src="assets/mp3/sp06.mp3" controls=true)
+
+            div
+              p 7. Driving Through Florida, Part III: Boat!
+              audio(src="assets/mp3/sp07.mp3" controls=true)
+
+            div
+              p 8. Driving Through Florida, Part IV: To Catch a Bad Guy
+              audio(src="assets/mp3/sp08.mp3" controls=true)
+
+          div.art
+            h2 Outside Cover
+            img(src="assets/images/arrowsmith-front-small.png")
+            a(href="assets/images/arrowsmith-front.png") Download Hi Res Version
+
+            h2 Inside Cover
+            img(src="assets/images/arrowsmith-back-small.png")
+            a(href="assets/images/arrowsmith-back.png") Download Hi Res Version
+            
+
+    script(type="text/javascript").
+      var players = Array.prototype.slice.call(document.getElementsByTagName('audio'));
+
+      players.forEach(function(p,i) {
+        if (i < (players.length - 1)) {
+          p.addEventListener('ended', function() {
+            players[i+1].play();
+          });
+        }
+      });
+
+    include ./includes/footer.jade
+
